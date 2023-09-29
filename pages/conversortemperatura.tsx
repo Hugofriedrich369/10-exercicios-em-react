@@ -11,9 +11,9 @@ export default function ConversorTemperatura() {
     try {
       if (!isNaN(temperatura)) {
         if (simboloTemperatura == "F")
-          setResult(((temperatura - 32) / 1.8).toString() + " ºC");
-        else if (simboloTemperatura == "C")
-          setResult((temperatura * 1.8 + 32).toString() + " ºF");
+        setResult((temperatura * 1.8 + 32).toString() + " ºF");
+      else if (simboloTemperatura == "C")
+      setResult(((temperatura - 32) / 1.8).toString() + " ºC");
       }
     } catch (error) {
       console.log(error);
